@@ -1,0 +1,13 @@
+<h1>Au</h1>
+<hr/>
+Math 1 + 2 = <%= 1+2 -%><br/>
+Concat = <%= "Eko" + " " + "Wibowo" -%><br/>
+Hour = <%= 1.hour.from_now -%> opposed to <%=Time.now  -%> using params <%= @time %>
+<hr/>
+<% 3.times do |i|  -%>
+<%=i%>. Macacho!!!
+<% end -%>
+<hr/>
+Email = <%=h("eko&ela@gameloft.com")%>
+<hr/>
+Link to <%= link_to "Hello", :action=>"hello"%>

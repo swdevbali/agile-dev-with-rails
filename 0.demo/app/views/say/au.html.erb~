@@ -1,0 +1,9 @@
+<h1>Au</h1>
+<hr/>
+Math 1 + 2 = <%= 1+2 -%><br/>
+Concat = <%= "Eko" + " " + "Wibowo" -%><br/>
+Hour = <%= 1.hour.from_now -%>
+<hr/>
+<% 3.times do |i|  -%>
+<%=i%>. Macacho!!!
+<% end -%>
