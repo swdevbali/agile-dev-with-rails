@@ -692,3 +692,140 @@ Processing ProductsController#index (for 127.0.0.1 at 2011-08-02 14:53:59) [GET]
 Rendering template within layouts/products
 Rendering products/index
 Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2011-08-02 23:16:27) [GET]
+  [4;36;1mProduct Load (1.6ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 252ms (View: 212, DB: 2) | 200 OK [http://localhost/products/]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2011-08-02 23:53:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProduct Load (2.7ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 199ms (View: 119, DB: 3) | 200 OK [http://localhost/products/1]
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2011-08-02 23:53:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 1) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 76ms (View: 57, DB: 0) | 200 OK [http://localhost/products/1/edit]
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2011-08-02 23:54:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/products/2/edit]
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2011-08-02 23:54:21) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProduct Load (0.3ms)[0m   [0;1mSELECT * FROM "products" WHERE ("products"."id" = 2) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/products/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-03 02:17:11) [GET]
+
+ActionController::RoutingError (No route matches "/s" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-03 02:17:11) [GET]
+
+ActionController::RoutingError (No route matches "/store" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-03 02:17:13) [GET]
+
+ActionController::RoutingError (No route matches "/store/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-03 02:17:14) [GET]
+
+ActionController::RoutingError (No route matches "/store/index" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-08-03 16:38:18) [GET]
+  [4;36;1mProduct Load (115.1ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 2864ms (View: 1461, DB: 115) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-08-03 16:42:27) [GET]
+  [4;35;1mProduct Load (57.7ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 817ms (View: 408, DB: 58) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-08-03 16:44:25) [GET]
+  [4;36;1mProduct Load (1.2ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 477ms (View: 375, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-08-03 16:45:12) [GET]
+  [4;35;1mProduct Load (2.3ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 1049ms (View: 895, DB: 2) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-08-03 16:48:18) [GET]
+  [4;36;1mProduct Load (1.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 54ms (View: 30, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-08-03 16:49:23) [GET]
+  [4;35;1mProduct Load (11.8ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 166ms (View: 120, DB: 12) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-08-03 16:50:02) [GET]
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 92ms (View: 61, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-08-03 16:50:08) [GET]
+  [4;35;1mProduct Load (0.9ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 47ms (View: 24, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-08-03 16:50:54) [GET]
+  [4;36;1mProduct Load (1.4ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 49ms (View: 41, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-08-03 16:51:12) [GET]
+  [4;35;1mProduct Load (48.7ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 186ms (View: 89, DB: 49) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2011-08-03 16:52:22) [GET]
+  [4;36;1mProduct Load (33.3ms)[0m   [0;1mSELECT * FROM "products" ORDER BY title[0m
+Rendering store/index
+Completed in 210ms (View: 19, DB: 33) | 200 OK [http://localhost/store]
